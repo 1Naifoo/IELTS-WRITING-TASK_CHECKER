@@ -31,6 +31,8 @@ function contentSecurityPolicy(): Plugin {
 }
 
 export default defineConfig({
+  // Relative paths so the same build works on GitHub Pages (in a sub-folder) and locally.
+  base: './',
   plugins: [react(), tailwindcss(), contentSecurityPolicy()],
   test: {
     include: ['tests/**/*.test.ts'],

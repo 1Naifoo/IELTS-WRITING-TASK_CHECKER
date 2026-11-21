@@ -1,7 +1,6 @@
 export const APP_NAME = 'IELTS Writing Checker'
 export const AUTHOR = '1Naifoo'
 export const REPO_URL = 'https://github.com/1Naifoo/IELTS-WRITING-TASK_CHECKER'
-
 /** Used until the app can ask Gemini which models your key can use. */
 export const DEFAULT_MODEL = 'gemini-2.5-flash'
 

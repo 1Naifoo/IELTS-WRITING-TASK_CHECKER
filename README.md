@@ -1,6 +1,10 @@
 # IELTS Writing Checker
 
-Free, open-source feedback on **IELTS Academic Writing Task 1 and Task 2**, using your own free Google Gemini API key. It runs on your own computer, with no account and no server.
+Free, open-source feedback on **IELTS Academic Writing Task 1 and Task 2**, using your own free Google Gemini API key. Nothing to install, no account, and no server that stores your work.
+
+### 👉 [Open the app](https://1naifoo.github.io/IELTS-WRITING-TASK_CHECKER/)
+
+`https://1naifoo.github.io/IELTS-WRITING-TASK_CHECKER/`. It works in any modern browser, on a computer or a phone.
 
 > [!IMPORTANT]
 > **This is not an official IELTS tool.** It is not affiliated with or endorsed by IELTS, IDP, the British Council or Cambridge. Scores and feedback are AI-generated estimates. They can be inaccurate or inconsistent, and they are not a reliable prediction of your real exam result. Use them for practice only, and ask a qualified teacher or examiner for an official assessment.
@@ -27,61 +31,31 @@ As a software engineer, I decided to build the tool I needed. I built it to help
 
 ---
 
-## Install (one time)
+## Before you start: get a free Gemini API key
 
-### 1. Install the tools
-
-| Tool | Download | Check it works |
-| --- | --- | --- |
-| Node.js **20 or newer** (choose the LTS version) | [nodejs.org](https://nodejs.org/) | `node -v` prints `v20` or higher |
-| Git | [git-scm.com](https://git-scm.com/downloads) | `git --version` prints a version |
-
-To run the check commands, open a terminal:
-- **Windows:** press Start, type `PowerShell`, and open it.
-- **macOS:** open **Terminal** from Applications → Utilities.
-
-### 2. Download the app
-
-In the terminal, run these commands one at a time:
-
-```bash
-git clone https://github.com/1Naifoo/IELTS-WRITING-TASK_CHECKER.git
-cd IELTS-WRITING-TASK_CHECKER
-npm install
-```
-
-### 3. Get a free Gemini API key
+The app uses Google's Gemini AI to check your writing. You need your own key (one time only, about 2 minutes):
 
 1. Open **[Google AI Studio](https://aistudio.google.com/apikey)** and sign in with your Google account.
 2. Click **Create API key**.
-3. Copy the key (it starts with `AIza`). You will paste it into the app in the next section.
+3. Copy the key (it starts with `AIza`).
 
-No payment details are needed.
+It's free, and no payment details are needed.
 
 ---
 
 ## How to use
 
-### Start the app
+### Open the app and add your key (first time only)
 
-In the terminal, inside the `IELTS-WRITING-TASK_CHECKER` folder, run:
-
-```bash
-npm start
-```
-
-The app opens in your browser at **http://localhost:4173**. If it doesn't open by itself, copy that address into your browser.
-
-Keep the terminal open while you use the app.
-
-### Add your key (first time only)
-
-1. Click the **⚙ gear icon** at the top right.
-2. Paste your key into **Paste your key**.
-3. Click **Save**.
-4. Wait for the green message **"Key saved and working"**.
+1. Open **[the app](https://1naifoo.github.io/IELTS-WRITING-TASK_CHECKER/)**.
+2. Click the **⚙ gear icon** at the top right.
+3. Paste your key into **Paste your key**.
+4. Click **Save**.
+5. Wait for the green message **"Key saved and working"**.
 
 If you see **"Key not saved"**, copy the key again from Google AI Studio and paste it again.
+
+The key is saved in your browser, so next time just open the link.
 
 ### Check a Task 2 essay
 
@@ -132,19 +106,6 @@ Buttons on the results page:
 
 Click **Results** in the top menu to see your last 50 results. Click one to open it again; this doesn't use your Gemini quota.
 
-### Next time
-
-Open a terminal, go to the app folder and start it:
-
-```bash
-cd IELTS-WRITING-TASK_CHECKER
-npm start
-```
-
-Your key and results are still saved in your browser.
-
-To stop the app, go to the terminal and press `Ctrl + C`.
-
 ---
 
 ## If something goes wrong
@@ -155,13 +116,13 @@ To stop the app, go to the terminal and press `Ctrl + C`.
 | **Your free Gemini quota … is used up** | Wait for the limit to reset (daily limits reset each day), or choose another model under **Model** in ⚙ Settings. |
 | **Too many requests** | Wait one minute, then click **Try again**. |
 | **Could not reach Gemini** | Check your internet connection, then click **Try again**. |
-| `node` or `npm` is not recognised | Install Node.js (see Install), then close and reopen the terminal. |
 
 Your question and answer stay on the page when an error appears, so you don't need to paste them again.
 
 ## Privacy
 
-- Your key, answers and results are stored **only in your browser**. Clearing your browser data deletes them.
+- The website only delivers the app's files. Your key, answers and results are stored **only in your browser**, on your device. Clearing your browser data deletes them.
+- Results are saved per browser: results saved on your laptop won't appear on your phone. To move them, use **Export** and **Import** on the **Results** page.
 - Your question, answer and chart image are sent **directly to Google Gemini**, under [Google's terms](https://ai.google.dev/gemini-api/terms). Google may use free-tier requests to improve its products, so **don't include personal information** in your essays.
 - **On a shared computer:** in ⚙ Settings, tick **Don't remember my key** and **Don't save my results**, and click **Clear key** when you finish.
 
@@ -172,7 +133,31 @@ Your question and answer stay on the page when an error appears, so you don't ne
 - Only Academic Task 1 is supported (no General Training letters yet).
 - The scoring guidance is written in our own words. For the official band descriptors, see [ielts.org](https://ielts.org).
 
+## How it works
+
+<!-- GITDIAGRAM: paste the Mermaid code from https://gitdiagram.com/1Naifoo/IELTS-WRITING-TASK_CHECKER here, inside a ```mermaid block. -->
+
+Interactive diagram of the code: **[view on GitDiagram](https://gitdiagram.com/1Naifoo/IELTS-WRITING-TASK_CHECKER)**
+
 ---
+
+## Run it on your own computer (optional)
+
+You don't need this to use the app. It's for people who want their own copy.
+
+1. Install **[Node.js](https://nodejs.org/) 20 or newer** (LTS) and **[Git](https://git-scm.com/downloads)**.
+2. Open a terminal (Windows: **PowerShell**; macOS: **Terminal**) and run:
+
+   ```bash
+   git clone https://github.com/1Naifoo/IELTS-WRITING-TASK_CHECKER.git
+   cd IELTS-WRITING-TASK_CHECKER
+   npm install
+   npm start
+   ```
+
+3. The app opens at **http://localhost:4173**. Add your key in ⚙ Settings.
+
+Press `Ctrl + C` in the terminal to stop it. Your key and results there are separate from the website's.
 
 ## For developers
 
@@ -184,7 +169,7 @@ npm run lint       # oxlint
 npm run build      # static build in dist/
 ```
 
-Built with React, TypeScript, Vite, Tailwind CSS and Zod.
+Built with React, TypeScript, Vite, Tailwind CSS and Zod. Every push to `main` runs the tests and publishes the site to GitHub Pages (`.github/workflows/deploy.yml`).
 
 | Path | Contents |
 | --- | --- |
