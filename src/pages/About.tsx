@@ -8,15 +8,19 @@ export default function About() {
 
       <Card>
         <h2 className="text-lg font-semibold text-accent-800">The story</h2>
-        {/* TODO(1Naifoo): replace this with your own story. */}
         <div className="mt-2 space-y-3 text-slate-700">
           <p>
-            Preparing for IELTS Writing is hard when you have no one to check your work. Good feedback from a teacher
-            costs money and takes time, and most online checkers only give you a number.
+            While I was preparing for IELTS, I kept writing Task 1 and Task 2 answers with no one to check them. I
+            needed a way to evaluate my work: to see my band, find my mistakes and understand how to fix them. Good
+            feedback from a teacher costs money and takes time, and most online checkers only gave me a number.
           </p>
           <p>
-            This project started as a simple idea: a free tool that reads your answer the way an examiner would, shows
-            you exactly where the mistakes are, explains why, and shows you a better way to say it. No accounts, no
+            As a software engineer, I decided to build the tool I needed. It reads your answer against the four IELTS
+            Writing criteria, shows you exactly where the mistakes are, explains why, and shows you a better way to say
+            it.
+          </p>
+          <p>
+            I built it to help myself, and I made it free and open source to help other learners too. No accounts, no
             paywall, and nothing stored on a server.
           </p>
         </div>
