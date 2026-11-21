@@ -6,6 +6,8 @@ Free, open-source feedback on **IELTS Academic Writing Task 1 and Task 2**, usin
 
 `https://1naifoo.github.io/IELTS-WRITING-TASK_CHECKER/`. It works in any modern browser, on a computer or a phone.
 
+[![Deploy status](https://github.com/1Naifoo/IELTS-WRITING-TASK_CHECKER/actions/workflows/deploy.yml/badge.svg)](https://github.com/1Naifoo/IELTS-WRITING-TASK_CHECKER/actions/workflows/deploy.yml)
+
 > [!IMPORTANT]
 > **This is not an official IELTS tool.** It is not affiliated with or endorsed by IELTS, IDP, the British Council or Cambridge. Scores and feedback are AI-generated estimates. They can be inaccurate or inconsistent, and they are not a reliable prediction of your real exam result. Use them for practice only, and ask a qualified teacher or examiner for an official assessment.
 
@@ -135,9 +137,9 @@ Your question and answer stay on the page when an error appears, so you don't ne
 
 ## How it works
 
-<!-- GITDIAGRAM: paste the Mermaid code from https://gitdiagram.com/1Naifoo/IELTS-WRITING-TASK_CHECKER here, inside a ```mermaid block. -->
+[![Architecture diagram of 1naifoo/ielts-writing-task_checker](https://gitdiagram.com/1naifoo/ielts-writing-task_checker/diagram.png)](https://gitdiagram.com/1naifoo/ielts-writing-task_checker?utm_source=readme&utm_medium=picture)
 
-Interactive diagram of the code: **[view on GitDiagram](https://gitdiagram.com/1Naifoo/IELTS-WRITING-TASK_CHECKER)**
+Click the diagram to open the interactive version on GitDiagram.
 
 ---
 
